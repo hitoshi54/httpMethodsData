@@ -45,7 +45,6 @@ class httpMethodsData {
     public static function getHeader($name) {
         if(!self::$init)
             self::init();
-        var_dump(self::$headers);
         if(!array_key_exists($name, self::$headers))
             return false;
         return self::$headers[$name];
